@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pré-diagnostic de la peau</title>
+</head>
+<body>
+<h1>Uploader une image de peau</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Analyser</button>
+</form>
+
+{% if result %}
+<p><strong>{{ result }}</strong></p>
+{% endif %}
+
+{% if error %}
+<p style="color: red;"><strong>{{ error }}</strong></p>
+{% endif %}
+</body>
+</html>
