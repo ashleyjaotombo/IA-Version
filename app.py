@@ -87,5 +87,4 @@ def index():
 
 # Lancement
 if __name__ == '__main__':
-    print("✅ Flask démarre sur http://localhost:5001")
     app.run(debug=True, port=5001)
